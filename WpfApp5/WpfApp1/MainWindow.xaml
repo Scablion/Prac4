@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="450">
+    <Grid Background="#333344">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Задание 5" FontSize="25" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="#33ab65"></TextBlock>
+        <TextBlock Text="Процент :" Style="{StaticResource AllText}" Grid.Row="1"/>
+        <!--<TextBlock Text="Значение:" Style="{StaticResource AllText}" Grid.Row="2"/>-->
+        <TextBlock Text="Ответ:" Style="{StaticResource AllText}" Grid.Row="2"/>
+        <TextBox x:Name="Proc" Grid.Column="2" Grid.Row="1" Style="{StaticResource AllBoxes}"/>
+        <!--<TextBox x:Name="Mean" Grid.Column="2" Grid.Row="2" Style="{StaticResource AllBoxes}" Margin="10,0"/>-->
+        <TextBox x:Name="Answer" Grid.Column="1" Grid.Row="2" Style="{StaticResource AllBoxes}" Height="188" Margin="53,0,10,0" Grid.ColumnSpan="3" Width="Auto" Grid.RowSpan="2"/>
+        <Button Content="OK" Click="Button_Click" FontSize="30" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" Background="DarkGray" Width="150" Height="60"/>
+    </Grid>
+</Window>
